@@ -3,7 +3,7 @@ const Intern = require('../lib/Intern.js');
 test('Creating an intern', () => {
     const intern = new Intern ('name', 'id', 'email', 'school');
 
-    expect (typeof(manager)).toBe('object');
+    expect (typeof(intern)).toBe('object');
 });
 
 test('Get school name', () => {
