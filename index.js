@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const Manager = require('./lib/Manager.js');
-const Employee = require('./lib/Employee.js');
+const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern.js');
 const generateHTML = require(`./lib/generateHTML`);
 
@@ -62,7 +62,7 @@ const addEngineer = () => {
             name: "gitHub"
         },
     ])
-        .then(({ engineerAnswers }) => {
+        .then(( engineerAnswers ) => {
             // instantiate a new Engineer!
             const addedEngineer = new Engineer(engineerAnswers.name, engineerAnswers.id, engineerAnswers.email, engineerAnswers.gitHub)
 
@@ -98,7 +98,7 @@ const addIntern = () => {
             name: "gitHub"
         }
     ])
-        .then(({ internAnswers }) => {
+        .then(( internAnswers ) => {
             // instantiate a new Intern!
             const addedIntern = new Intern(internAnswers.name, internAnswers.id, internAnswers.email, internAnswers.school)
 
@@ -118,7 +118,7 @@ function exitApp() {
     fs.writeFile('index.html', createHTML, (err) =>
         err ? console.log(err) : console.log('Team page successfully created!')
     );
-    
+    console.log(teamStaff);
 }
 
 // Begins the app & gathers Manager's Info
@@ -145,7 +145,7 @@ const managerStart = () => {
             name: "officeNum"
         },
     ])
-        .then(({ managerAnswers }) => {
+        .then(( managerAnswers ) => {
             // instantiate the manager!
             const addedManager = new Manager(managerAnswers.name, managerAnswers.id, managerAnswers.email, managerAnswers.officeNum);
 
