@@ -95,7 +95,7 @@ const addIntern = () => {
         {
             type: "input",
             message: "What's the intern's school name?",
-            name: "gitHub"
+            name: "school"
         }
     ])
         .then(( internAnswers ) => {
@@ -112,13 +112,14 @@ const addIntern = () => {
 
 // Exit Application
 function exitApp() {
+    console.log(teamStaff);
     // create HTML
     const createHTML = generateHTML(teamStaff);
 
     fs.writeFile('index.html', createHTML, (err) =>
         err ? console.log(err) : console.log('Team page successfully created!')
     );
-    console.log(teamStaff);
+    
 }
 
 // Begins the app & gathers Manager's Info
