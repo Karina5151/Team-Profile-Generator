@@ -3,8 +3,10 @@ const fs = require("fs");
 const Manager = require('./lib/Manager.js');
 const Employee = require('./lib/Employee.js');
 const Intern = require('./lib/Intern.js');
+const generateHTML = require(`./lib/generateHTML`);
 
-let teamPage = new Employee("Team work makes the dream work");
+// let teamPage = new Employee("Team work makes the dream work");
+const teamStaff = [];
 
 // Gives options to add an employee or exit the application
 const actionMenu = () => {
@@ -36,7 +38,6 @@ const actionMenu = () => {
         })
 }
 
-
 // Displays questions for adding Engineers
 const addEngineer = () => {
     inquirer.prompt([
@@ -59,14 +60,14 @@ const addEngineer = () => {
             type: "input",
             message: "What's the engineer's GitHub username?",
             name: "gitHub"
-        }
+        },
     ])
-        .then(({ name, id, email, gitHub }) => {
+        .then(({ engineerAnswers }) => {
             // instantiate a new Engineer!
-            const addedEngineer = new Engineer(name, id, email, gitHub)
+            const addedEngineer = new Engineer(engineerAnswers.name, engineerAnswers.id, engineerAnswers.email, engineerAnswers.gitHub)
 
             // add the engineer to the Team Page
-            teamPage.push(addedEngineer);
+            teamStaff.push(addedEngineer);
 
             // go to action menu
             actionMenu();
@@ -97,12 +98,12 @@ const addIntern = () => {
             name: "gitHub"
         }
     ])
-        .then(({ name, id, email, school }) => {
+        .then(({ internAnswers }) => {
             // instantiate a new Intern!
-            const addedIntern = new Intern(name, id, email, school)
+            const addedIntern = new Intern(internAnswers.name, internAnswers.id, internAnswers.email, internAnswers.school)
 
             // add the intern to the Team Page
-            teamPage.push(addedIntern);
+            teamStaff.push(addedIntern);
 
             // go to action menu
             actionMenu();
@@ -112,46 +113,12 @@ const addIntern = () => {
 // Exit Application
 function exitApp() {
     // create HTML
-    const createHTML = generateHTML(teamPage);
+    const createHTML = generateHTML(teamStaff);
 
     fs.writeFile('index.html', createHTML, (err) =>
-        err ? console.log(err) : console.log('You have successfully created an HTML!')
+        err ? console.log(err) : console.log('Team page successfully created!')
     );
-    const generateHTML = (teamPage) =>
-
-`<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Mini Project: Node!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-</head>
-<body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-        <h1 class="p-3 mb-2 bg-danger text-white">My Team</h1>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-header column"> 
-            <h5>${teamPage.Employee.name}</h5>
-            <h5>${teamPage.Employee.employeeType}</h5>
-        </div>
-        <div class="card-body">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${teamPage.Employee.id}</li>
-                <li class="list-group-item">Email: ${teamPage.Employee.email}</li>
-                <li class="list-group-item">XXX</li>
-            </ul>
-        </div>
-
-    </div>
-
-</body>
-</html>`
-
-    // close terminal
+    
 }
 
 // Begins the app & gathers Manager's Info
@@ -178,12 +145,12 @@ const managerStart = () => {
             name: "officeNum"
         },
     ])
-        .then(({ name, id, email, officeNum }) => {
+        .then(({ managerAnswers }) => {
             // instantiate the manager!
-            const addedManager = new Manager(name, id, email, officeNum)
+            const addedManager = new Manager(managerAnswers.name, managerAnswers.id, managerAnswers.email, managerAnswers.officeNum);
 
             // add the manager to the Team Page
-            teamPage.push(addedManager);
+            teamStaff.push(addedManager);
 
             // go to action menu
             actionMenu();
