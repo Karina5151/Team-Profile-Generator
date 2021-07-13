@@ -5,7 +5,7 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern.js');
 const generateHTML = require(`./lib/generateHTML`);
 
-// let teamPage = new Employee("Team work makes the dream work");
+// Array for all added employees
 const teamStaff = [];
 
 // Gives options to add an employee or exit the application
