@@ -15,5 +15,5 @@ test('Get school name', () => {
 test('Get employee type', () => {
     const intern = new Intern ('name', 'id', 'email', 'univeristyABC');
 
-    expect (intern.getemployeeType()).toBe('Intern');
+    expect (intern.getEmployeeType()).toBe('Intern');
 });

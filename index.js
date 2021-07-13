@@ -66,7 +66,7 @@ const addEngineer = () => {
             // instantiate a new Engineer!
             const addedEngineer = new Engineer(engineerAnswers.name, engineerAnswers.id, engineerAnswers.email, engineerAnswers.gitHub)
 
-            // add the engineer to the Team Page
+            // add the engineer to the teamStaff Array
             teamStaff.push(addedEngineer);
 
             // go to action menu
@@ -102,7 +102,7 @@ const addIntern = () => {
             // instantiate a new Intern!
             const addedIntern = new Intern(internAnswers.name, internAnswers.id, internAnswers.email, internAnswers.school)
 
-            // add the intern to the Team Page
+            // add the intern to the teamStaff Array
             teamStaff.push(addedIntern);
 
             // go to action menu
@@ -150,7 +150,7 @@ const managerStart = () => {
             // instantiate the manager!
             const addedManager = new Manager(managerAnswers.name, managerAnswers.id, managerAnswers.email, managerAnswers.officeNum);
 
-            // add the manager to the Team Page
+            // add the manager to the teamStaff Array
             teamStaff.push(addedManager);
 
             // go to action menu
