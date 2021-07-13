@@ -3,7 +3,7 @@ const fs = require("fs");
 const Manager = require('./lib/Manager.js');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern.js');
-const generateHTML = require(`./lib/generateHTML`);
+const generateHTML = require(`./src/generateHTML`);
 
 // Array for all added employees
 const teamStaff = [];
@@ -116,7 +116,7 @@ function exitApp() {
     // create HTML
     const createHTML = generateHTML(teamStaff);
 
-    fs.writeFile('index.html', createHTML, (err) =>
+    fs.writeFile('./dist/index.html', createHTML, (err) =>
         err ? console.log(err) : console.log('Team page successfully created!')
     );
     

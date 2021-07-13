@@ -15,5 +15,5 @@ test('Get GitHub account', () => {
 test('Get employee type', () => {
     const engineer = new Engineer ('name', 'id', 'email', 'joeSmoe');
 
-    expect (engineer.getemployeeType()).toBe('engineer');
+    expect (engineer.getemployeeType()).toBe('Engineer');
 });

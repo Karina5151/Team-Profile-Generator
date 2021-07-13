@@ -1,0 +1,24 @@
+
+.jumbotron {
+    height: 200px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    padding-top: 45px;
+}
+
+.cardContainer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+}
+
+.card-body {
+    background-color: rgb(241, 240, 240);
+}
