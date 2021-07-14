@@ -7,6 +7,7 @@
   This is a Node.js command-line application that receives information about employees on a software engineering team, to then generate an HTML webpage displaying the profiles of each employee.
 
 Launch example webpage [here](https://karina5151.github.io/hw10-team-profile-generator/dist/index.html)
+
 ![Web App Image](./assets/web_app_html.png)
 
 ## :trophy: Table of Contents
@@ -32,7 +33,7 @@ node index.js
 ```
 ![Command Line Screenshot](./assets/command_line.png)
 
-<a href="https://drive.google.com/file/d/1TeUPNBs9ZwsuvNa1-06g1Ui8VptV33zY/view?usp=sharing" rel="nofollow">Click here for the full screen demo</a>
+<a href="https://drive.google.com/file/d/1TeUPNBs9ZwsuvNa1-06g1Ui8VptV33zY/view?usp=sharing" rel="nofollow" target="_blank">Click here for the full screen demo</a>
 
 
 ## Contributing
@@ -41,12 +42,12 @@ The technologies that made this possible are:
 * HTML
 * CSS
 * JavaScript
-* <a href="https://nodejs.org/api/fs.html" rel="nofollow">Node.js</a>
-* <a href="https://www.npmjs.com/package/jest" rel="nofollow">Jest</a>
-* <a href="https://www.npmjs.com/package/inquirer" rel="nofollow">Inquirer</a>
-* <a href="https://shields.io/" rel="nofollow">Shields.io</a>
-* <a href="https://getbootstrap.com/" rel="nofollow">Bootstrap</a>
-* <a href="https://fontawesome.com/" rel="nofollow">Font Awesome</a>
+* <a href="https://nodejs.org/api/fs.html" rel="nofollow" target="_blank">Node.js</a>
+* <a href="https://www.npmjs.com/package/jest" rel="nofollow" target="_blank">Jest</a>
+* <a href="https://www.npmjs.com/package/inquirer" rel="nofollow" target="_blank">Inquirer</a>
+* <a href="https://shields.io/" rel="nofollow" target="_blank">Shields.io</a>
+* <a href="https://getbootstrap.com/" rel="nofollow" target="_blank">Bootstrap</a>
+* <a href="https://fontawesome.com/" rel="nofollow" target="_blank">Font Awesome</a>
 
 
 ## Tests
