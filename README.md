@@ -6,8 +6,8 @@
 ## :memo: Description
   This is a Node.js command-line application that receives information about employees on a software engineering team, to then generate an HTML webpage displaying the profiles of each employee.
 
-Launch example webpage [here](https://karina5151.github.io/hw5-work-day-scheduler/)
-![Web App Image](./assets/images/web_app_html.png)
+Launch example webpage [here](https://karina5151.github.io/hw10-team-profile-generator/dist/index.html)
+![Web App Image](./assets/web_app_html.png)
 
 ## :trophy: Table of Contents
 * [Installation](#installation)
@@ -30,9 +30,10 @@ To generate a webpage for your software engineering team by completing all promp
 ```
 node index.js
 ```
-![Command Line Screenshot](./assets/images/command_line.png)
-View Demo <a href="https://drive.google.com/file/d/1TeUPNBs9ZwsuvNa1-06g1Ui8VptV33zY/view?usp=sharing" rel="nofollow">Here</a>
-![Demo](./assets/images/team_generator_demo_vid.webm)
+![Command Line Screenshot](./assets/command_line.png)
+
+<a href="https://drive.google.com/file/d/1TeUPNBs9ZwsuvNa1-06g1Ui8VptV33zY/view?usp=sharing" rel="nofollow">Click here for the full screen demo</a>
+
 
 ## Contributing
 This application was developed by Karina Clausen.
@@ -52,7 +53,7 @@ The technologies that made this possible are:
 ```
 npm run test
 ```
-![Test Screenshot](./assets/images/test_screenshot.png)
+![Test Screenshot](./assets/test_screenshot.png)
 
 
  ---
