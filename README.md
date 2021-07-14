@@ -42,7 +42,7 @@ The technologies that made this possible are:
 * HTML
 * CSS
 * JavaScript
-* <a href="https://nodejs.org/api/fs.html" rel="nofollow" target="_blank">Node.js</a>
+* <a href="https://nodejs.org/api/fs.html" target="_blank">Node.js</a>
 * <a href="https://www.npmjs.com/package/jest" rel="nofollow" target="_blank">Jest</a>
 * <a href="https://www.npmjs.com/package/inquirer" rel="nofollow" target="_blank">Inquirer</a>
 * <a href="https://shields.io/" rel="nofollow" target="_blank">Shields.io</a>
