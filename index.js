@@ -112,7 +112,7 @@ const addIntern = () => {
 
 // Exit Application
 function exitApp() {
-    console.log(teamStaff);
+    // console.log(teamStaff);
     // create HTML
     const createHTML = generateHTML(teamStaff);
 
