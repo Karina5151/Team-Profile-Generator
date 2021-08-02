@@ -1,7 +1,7 @@
 {
   "name": "hw10-team-profile-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "&nbsp;&nbsp;&nbsp;&nbsp;![Repo size badge](https://img.shields.io/github/repo-size/Karina5151/hw10-team-profile-generator?color=success) &nbsp;&nbsp;&nbsp;&nbsp;![Language % badge](https://img.shields.io/github/languages/top/Karina5151/hw10-team-profile-generator) &nbsp;&nbsp;&nbsp;&nbsp;",
   "main": "index.js",
   "directories": {
     "lib": "lib"
