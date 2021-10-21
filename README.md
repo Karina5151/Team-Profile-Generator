@@ -6,7 +6,7 @@
 ## :memo: Description
   This is a Node.js command-line application that receives information about employees on a software engineering team, to then generate an HTML webpage displaying the profiles of each employee.
 
-Launch example webpage [here](https://karina5151.github.io/hw10-team-profile-generator/dist/index.html)
+Launch example webpage [here](https://karina5151.github.io/Team-Profile-Generator/dist/)
 
 ![Web App Image](./assets/web_app_html.png)
 
